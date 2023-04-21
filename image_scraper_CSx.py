@@ -9,13 +9,13 @@ import re
 import random
 
 
-toplevel = "http://*******URL REMOVED*********"
-subfolder = "/************/"
+toplevel = "http://www.google.com". #top level domain to scrape
+subfolder = ""  #empty, subfolder can go here
 mainurl = toplevel + subfolder
 
-magicword = "resources" 
+magicword = "" #empty, magic word to sort for goes here
 
-delay = 860 #microseconds
+delay = 500 #microseconds delay for rate limiter
 
 def getlinks(url_in): 
     links_scraped = []
